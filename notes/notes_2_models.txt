@@ -1,0 +1,31 @@
+Objects: a collection of properties (object properties) and actions (methods) 
+
+object-oriented programming: model things and define how they interact with each other 
+
+Blog Post Properties 
+--------
+title 
+text
+author
+created_date
+published_date
+
+Blog Post Actions/Methods 
+--------
+publish
+
+
+To create an application, run (from the djangogirls directory where manage.py file is): 
+    (maivenv) C:\Users\maiya\djangogirls> py manage.py startapp blog
+
+Then tell Django to use the application in the mysite/settings.py file. Add 'blog.apps.BlogConfig' to the INSTALLED_APPS = [] function.
+
+    models.CharField - how u define text with a limited number of characters 
+
+    models.TextField - how u define text with an unlimited number of characters 
+
+    models.DateTimeField - is the date and time 
+
+    models.ForeignKey - is a link to another model 
+
+To add my new model to my database. 

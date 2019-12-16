@@ -1,0 +1,42 @@
+Change working directory to "djangogirls": 
+    >cd djangogirls 
+
+Create a new virtual environment with: 
+    >py -m venv maivenv
+
+Activate virtual environment with: 
+    > maivenv\Scripts\activate
+
+Ensure I have the latest version of pip: 
+    >py -m pip install --upgrade pip
+
+Requirements.txt file: 
+    - a list of dependencies to be installed using: pip install 
+    - then run 
+        > pip install -r requirements.txt to install Django
+
+djangogirls
+├── manage.py #helps with the management of the website, such as started a web serve on my computer without installing anything else 
+├── mysite
+│   ├── __init__.py
+│   ├── settings.py #contains the configuration to my website 
+│   ├── urls.py #contains a list of patterns used by urlresolver 
+│   └── wsgi.py
+├── myvenv
+│   └── ...
+└── requirements.txt
+
+in the mysite/settings.py file: 
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+
+Database being used for this django_girls blog is: SQLite3
+
+To create a database for my blog, run: 
+    > py manage.py migrate 
+
+To start the web server, run: 
+    > py manage.py runserver 
+
+#Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+
+#To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see Introduction to the command line. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
