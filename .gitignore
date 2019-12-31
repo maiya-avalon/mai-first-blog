@@ -5,5 +5,4 @@ __pycache__
 maivenv
 notes
 db.sqlite3
-/static
 .DS_Store
